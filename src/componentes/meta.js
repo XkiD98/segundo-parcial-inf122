@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import Meta from "./Meta";
+
 const Meta = ({ meta }) => {
   const [estado, setEstado] = useState("pendiente");
 
@@ -8,16 +10,16 @@ const Meta = ({ meta }) => {
   };
 
   const handleClickEliminar = () => {
-    // Eliminar la meta
+    
   };
 
   return (
     <div className="meta">
-      <h3>{meta.titulo}</h3>
-      <p>{meta.descripcion}</p>
+      <h3 className="meta-titulo">{meta.titulo}</h3>
+      <p className="meta-descripcion">{meta.descripcion}</p>
       <div className="meta-estado">
         <button
-          className={`meta-estado-boton ${estado}`}
+          className={`meta-estado-boton ${estado === "completada" ? "verde" : ""}`}
           onClick={handleClickCompletar}
         >
           {estado === "pendiente" ? "Completar" : "Completada"}

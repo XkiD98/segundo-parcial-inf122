@@ -1,0 +1,33 @@
+.meta {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.meta-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.meta-descripcion {
+  font-size: 1rem;
+}
+
+.meta-estado {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meta-estado-boton {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meta-estado-boton.verde {
+  background-color: #009688;
+}
